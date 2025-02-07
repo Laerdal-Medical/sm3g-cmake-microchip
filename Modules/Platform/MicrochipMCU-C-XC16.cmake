@@ -114,7 +114,3 @@ set(CMAKE_C_STANDARD_COMPUTED_DEFAULT 90)
 add_compile_options(
     "-mcpu=${MICROCHIP_MCU_MODEL}"
 )
-string(APPEND CMAKE_C_LINK_FLAGS
-    " -mcpu=${MICROCHIP_MCU_MODEL}"
-    " -Wl,--script,p${MICROCHIP_MCU_MODEL}.gld"
-)
